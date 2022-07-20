@@ -5,7 +5,7 @@ import {
 } from "@expo-google-fonts/roboto";
 import { NativeBaseProvider, StatusBar } from "native-base";
 import Loading from "./src/components/Loading";
-import SignIn from "./src/screens/SignIn";
+import { Routes } from "./src/routes";
 
 import { THEME } from "./src/styles/theme";
 
@@ -22,7 +22,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent //faz com que a status bar fique absoluta
       />
-      {fontsLoaded ? <SignIn /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </NativeBaseProvider>
   );
 }

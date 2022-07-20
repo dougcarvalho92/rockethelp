@@ -30,6 +30,7 @@ export default function SignIn() {
         placeholder="Senha"
         InputLeftElement={<Icon as={<Key color={colors.gray[300]} />} ml={4} />}
         secureTextEntry
+        type="password"
         mb={8}
         value={password}
         onChangeText={setPassword}
