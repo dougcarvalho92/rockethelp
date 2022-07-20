@@ -1,3 +1,4 @@
+import auth from "@react-native-firebase/auth";
 import firestore from "@react-native-firebase/firestore";
 import { useNavigation } from "@react-navigation/native";
 import { VStack } from "native-base";
@@ -23,6 +24,7 @@ export function Register() {
         description,
         status: "open",
         created_at: firestore.FieldValue.serverTimestamp(),
+        created_by: auth().currentUser.uid,
       })
       .then(() => {
         Alert.alert("Solicitação", "Registrada com sucesso!");

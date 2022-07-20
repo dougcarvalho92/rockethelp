@@ -51,6 +51,7 @@ export function Home() {
       .collection("orders")
       .where("status", "==", statusSelected)
       .onSnapshot((snapshot) => {
+        console.log(snapshot.docs);
         const data = snapshot.docs.map((doc) => {
           const { patrimony, description, status, created_at } = doc.data();
           return {
