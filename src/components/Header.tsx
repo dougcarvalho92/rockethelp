@@ -12,7 +12,7 @@ type Props = StyledProps & {
   title: string;
 };
 
-export function Header({ title, ...rest }) {
+export function Header({ title, ...rest }: Props) {
   const { colors } = useTheme();
   const navigation = useNavigation();
 

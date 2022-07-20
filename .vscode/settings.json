@@ -1,4 +1,4 @@
 {
-  "conventionalCommits.scopes": ["Component"],
+  "conventionalCommits.scopes": ["Component", "Firebase"],
   "cSpell.words": ["firestore"]
 }
